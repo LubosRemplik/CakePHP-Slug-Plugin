@@ -1,0 +1,19 @@
+h1. CakePHP Slug Plugin
+
+A CakePHP Plugin for creating slug with your model
+
+h2. Usage
+
+In your model
+
+bc. 
+var $actsAs = array(
+	'UniqueKey.UniqueKey' => array(
+		'field' => null,
+		'saveField' => 'slug',
+		'override' => false,
+		'separator' => '-',
+		'length' => 100,
+		'translation' => 'utf-8'
+	)
+);
